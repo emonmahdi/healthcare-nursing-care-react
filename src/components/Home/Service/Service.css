@@ -1,0 +1,8 @@
+.single-service img{
+    height: 300px;
+}
+.single-service{
+    margin-bottom: 30px;
+    box-shadow: 0 3px 14px #ddd;
+    border-radius: 6px;
+}
