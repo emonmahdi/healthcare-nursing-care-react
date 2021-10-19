@@ -3,7 +3,7 @@ import './Contact.css'
 import img from './c2.png'
 const Contact = () => {
     return (
-        <div className='contact-section'>
+        <div id='contact' className='contact-section'>
             <div className="container ">
                 <div className="section-title text-center">
                     <h2>Contact </h2>
