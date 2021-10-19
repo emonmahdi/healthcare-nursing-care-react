@@ -7,12 +7,17 @@ import Services from './components/Home/Services/Services';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import NotFound from './components/NotFound/NotFound';
 import ServiceDetails from './components/ServiceDetails/ServiceDetails';
+import Login from './components/Login/Login/Login';
+import Register from './components/Login/Register/Register';
+import AuthProvider from './contexts/AuthProvider';
+import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
 
 
 function App() {
   return (
     <div className="App">  
        
+       <AuthProvider>
        <BrowserRouter>
        <Header></Header>
           <Switch>
@@ -22,14 +27,21 @@ function App() {
             <Route exact path='/home'>
                <Home></Home>
             </Route>
-            <Route exact path='/service/:serviceId'>
-              <ServiceDetails></ServiceDetails>
+            <Route exact path='/login'>
+                <Login></Login>
             </Route>
+            <Route exact path='/register'>
+               <Register></Register>
+            </Route>
+            <PrivateRoute exact path='/service/:serviceId'>
+              <ServiceDetails></ServiceDetails>
+            </PrivateRoute>
             <Route path='*'>
               <NotFound></NotFound>
             </Route>
           </Switch>
        </BrowserRouter>
+       </AuthProvider>
     </div>
   );
 }
