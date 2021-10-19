@@ -5,7 +5,7 @@ import useFirebase from '../../../hooks/useFirebase';
 const Register = () => {
     const {error,handleRegistration, handleEmailChange, handlePasswordChange} = useFirebase()
     return (
-        <div>
+        <div className='mb-5'>
             <h2 className='text-primary'>Please Registration</h2>
            <form onSubmit={handleRegistration}>
            <div className='w-25 p-3 mx-auto border mt-4 bg-secondary rounded'>

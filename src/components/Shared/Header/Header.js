@@ -14,15 +14,16 @@ const Header = () => {
         <>
         <Navbar bg="info" variant="light" sticky="top" collapseOnSelect expand="lg">
             <Container>
-            <Navbar.Brand to="#home"> <span className='text-dark'>{element}</span> Nursing Care</Navbar.Brand>
+            <Navbar.Brand to="#home"> <span className='text-dark'>{element}</span> Nursing <span className='fw-bold text-dark'>Care</span> </Navbar.Brand>
             
-            <Navbar.Toggle />
+            <Navbar.Toggle /> 
             
             <Navbar.Collapse className="justify-content-end">
                 <Nav className="">
                     <Nav.Link as={Link} to="/home">Home</Nav.Link>
                     <Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
                     <Nav.Link as={Link} to="/about">About Us</Nav.Link>
+                    <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
                     <Nav.Link href="#contact">Contact</Nav.Link>
                     {user?.email?
                     <Button onClick={logOut} variant='light'>Logout</Button>: 

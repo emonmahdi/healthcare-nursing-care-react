@@ -8,7 +8,7 @@ const Footer = () => {
             <div id='footer-section'>
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-4">
+                    <div className="col-lg-4 text-start">
                         <h2>Delievered on time with <span className='text-info'>no hassle</span> </h2>
                         <div className="social-link">
                             <a href="#"> <i className='fab fa-facebook-f'></i> </a>

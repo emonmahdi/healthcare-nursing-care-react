@@ -5,7 +5,7 @@ import useFirebase from '../../../hooks/useFirebase';
 const Login = () => {
     const {user, signInUsingGoogle} = useFirebase()
     return (
-        <div>
+        <div className='mb-5'>
             <div className='w-25 p-3 mx-auto border mt-4 bg-secondary rounded'>
                 <input className='form-control mb-2' type="email" placeholder='Email' />
                 <input className='form-control mb-4' type="password" placeholder='Password' />

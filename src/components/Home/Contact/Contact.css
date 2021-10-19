@@ -1,0 +1,14 @@
+.contact-section{
+    padding: 40px 0;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5));
+}
+.textarea{
+    height: 250px;
+}
+.single-area img{
+    width: 20%;
+}
+.single-area h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}

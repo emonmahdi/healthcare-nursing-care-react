@@ -11,6 +11,9 @@ import Login from './components/Login/Login/Login';
 import Register from './components/Login/Register/Register';
 import AuthProvider from './contexts/AuthProvider';
 import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
+import About from './components/About/About';
+import Footer from './components/Home/Footer/Footer';
+import Blog from './components/Blog/Blog';
 
 
 function App() {
@@ -30,6 +33,12 @@ function App() {
             <Route exact path='/login'>
                 <Login></Login>
             </Route>
+            <Route exact path='/about'>
+                 <About></About>
+            </Route>
+            <PrivateRoute exact path='/blog'>
+                 <Blog></Blog>
+            </PrivateRoute>
             <Route exact path='/register'>
                <Register></Register>
             </Route>
@@ -40,6 +49,7 @@ function App() {
               <NotFound></NotFound>
             </Route>
           </Switch>
+          <Footer></Footer>
        </BrowserRouter>
        </AuthProvider>
     </div>

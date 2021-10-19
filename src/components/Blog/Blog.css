@@ -1,0 +1,32 @@
+.about-header{
+    position: relative;
+}
+.about-header h2{
+    position: absolute;
+    top: 30%;
+    left: 42%;
+    font-size: 60px;
+    color:#fff;
+    font-weight: 700;
+}
+.blog-content{
+    padding:50px 0;
+}
+.section-title{
+    margin-bottom: 50px;
+}
+.section-title h2{
+    font-size: 40px;
+    font-weight: 800;
+}
+.section-title span{
+    color:#43BC95
+}
+.single-blog{
+    border:1px solid #43BC95;
+    box-shadow: 0 4px 14px #ddd;
+}
+.blog-img img{
+    height: 300px;
+    width: 100%;
+}

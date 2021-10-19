@@ -1,0 +1,53 @@
+.about-header{
+    position: relative;
+}
+.about-header h2{
+    position: absolute;
+    top: 30%;
+    left: 42%;
+    font-size: 60px;
+    color:#fff;
+    font-weight: 700;
+}
+.about-content{
+    padding:50px 0;
+}
+.header-title {
+    width: 60%;
+    margin:0 auto;
+    margin-bottom: 70px;
+}
+.header-title  h2{
+    font-weight: 900;
+}
+.header-title span{
+    color:#43BC95;
+}
+.img{
+    background-color: #43BC95;
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    border:10px solid #BDE8DA;
+}
+.single-about h2{
+    font-weight: 700;
+    margin: 20px 0;
+    font-size: 24px;
+}
+.single-about{
+    transition: .6s;
+    transform: scale(1.0);
+    padding: 20px;
+    border:2px solid #fff;
+    margin-bottom: 30px;
+}
+.single-about:hover{
+    transform: scale(.9);
+    border:2px solid #43BC95;
+}

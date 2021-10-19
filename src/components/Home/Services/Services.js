@@ -12,7 +12,7 @@ const Services = () => {
 
     return (
         <div id='services' className='py-5'>
-             <h2 className='mb-5 text-primary fw-bold'>Our Services</h2>
+             <h2 className='mb-5 fw-bold'>Our <span className='text-warning'>Services</span> </h2>
              <div className="container">
                 <div className="row">
                     {
