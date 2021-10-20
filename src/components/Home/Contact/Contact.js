@@ -18,7 +18,7 @@ const Contact = () => {
                             </form>
                         </div>
                         <div className="col-lg-4">
-                            <div className="single-area text-light">
+                            <div className="single-area mt-4 text-light">
                                 <img src={img} className='img-fluid' alt="" />
                                 <h3>Call Center</h3>
                                 <p>24/7 Support 

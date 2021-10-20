@@ -10,13 +10,14 @@ const element2 = <FontAwesomeIcon icon={ faUser} />
 
 const Login = () => {
     const {user, signInUsingGoogle} = useFirebase();  
+    const {handleLogin,error,handleRegistration, handleEmailChange, handlePasswordChange, handleNameChange} = useAuth(); 
     return (
         <div>
             <h2 className='mt-2'>{element2} Login </h2>
             <div className='w-25 mb-5 p-3 mx-auto border mt-4 bg-secondary rounded'>
-                <input className='form-control mb-2' type="email" placeholder='Email' />
-                <input className='form-control mb-4' type="password" placeholder='Password' />
-                <button className='btn btn-primary'>Login</button>
+                <input onBlur={handleEmailChange} className='form-control mb-2' type="email" placeholder='Email' />
+                <input onBlur={handlePasswordChange} className='form-control mb-4' type="password" placeholder='Password' />
+                <button onClick={handleLogin} className='btn btn-primary'>Login</button>
                 <br />
                 <br />
                 <p>
