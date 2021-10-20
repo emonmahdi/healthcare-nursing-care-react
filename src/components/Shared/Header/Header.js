@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.css'
+import './Header.css';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserNurse } from '@fortawesome/free-solid-svg-icons';  
@@ -9,7 +9,7 @@ import useAuth from '../../../hooks/useAuth';
 const element = <FontAwesomeIcon icon={ faUserNurse} />
 
 const Header = () => {
-    const {user, email, logOut} = useAuth(); 
+    const {user, email, logOut} = useAuth();  
     return (
         <>
         <Navbar bg="info" variant="light" sticky="top" collapseOnSelect expand="lg">
@@ -32,10 +32,10 @@ const Header = () => {
                 <Navbar.Text>
                     
                     Signed in as:
-                     <a href="#login" className='text-danger'>
+                     <a href="#login" className='text-dark bg-light p-2 fw-bold '>
                      {
                          user.displayName? <span> {user.displayName} </span>:
-                         <span>{user.email}</span>
+                         <span className='fw-bold '>{user.displayName}</span>
                      }
                     {/* <img  src={user.photoURL} className='login-img' alt="User" /> */}
                     </a>

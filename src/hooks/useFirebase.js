@@ -1,5 +1,5 @@
 import initializeAuthentication from "../Firebase/firebase.init"
-import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword,signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword,signInWithEmailAndPassword, updateProfile  } from "firebase/auth";
 import { useEffect, useState } from "react";
 
 
@@ -61,6 +61,7 @@ const useFirebase =() => {
                 const user = result.user 
                 console.log(user);
                 setError('');
+                setUserName('');
             })
             .catch(error => {
                 setError(error.message);
@@ -81,7 +82,11 @@ const useFirebase =() => {
                 setError(error.message)
             })
     }
-
+    // setName 
+    const setUserName =()=> {
+        updateProfile (auth.currentUser, {displayName : name})
+            .then( () => {})
+    }
 
     const handleNameChange =(e) => {
         setName(e.target.value)
@@ -105,7 +110,8 @@ const useFirebase =() => {
         handleEmailChange,
         handlePasswordChange,
         handleNameChange,
-        handleLogin
+        handleLogin,
+        setUserName
     }
 }
 

@@ -6,6 +6,7 @@ import useFirebase from '../../../hooks/useFirebase';
 
 const Register = () => {
     const {error,handleRegistration, handleEmailChange, handlePasswordChange, handleNameChange} = useAuth();
+    console.log(handleNameChange)
     return (
         <div className='mb-5 '>
             <h2 className='text-primary'>Please Registration</h2>
