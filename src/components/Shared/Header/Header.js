@@ -9,7 +9,7 @@ import useAuth from '../../../hooks/useAuth';
 const element = <FontAwesomeIcon icon={ faUserNurse} />
 
 const Header = () => {
-    const {user, email, logOut} = useAuth();
+    const {user, email, logOut} = useAuth(); 
     return (
         <>
         <Navbar bg="info" variant="light" sticky="top" collapseOnSelect expand="lg">
@@ -44,8 +44,7 @@ const Header = () => {
             </Navbar.Collapse>
             
             </Container>
-        </Navbar>
-        {/* slider component */}
+        </Navbar> 
         
         </>
     );

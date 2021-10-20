@@ -1,19 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faUser } from '@fortawesome/free-solid-svg-icons';  
 import useFirebase from '../../../hooks/useFirebase';
+import useAuth from '../../../hooks/useAuth';
+ 
+ 
+const element2 = <FontAwesomeIcon icon={ faUser} />
 
 const Login = () => {
-    const {user, signInUsingGoogle} = useFirebase()
+    const {user, signInUsingGoogle} = useFirebase();  
     return (
-        <div className='mb-5'>
-            <div className='w-25 p-3 mx-auto border mt-4 bg-secondary rounded'>
+        <div>
+            <h2 className='mt-2'>{element2} Login </h2>
+            <div className='w-25 mb-5 p-3 mx-auto border mt-4 bg-secondary rounded'>
                 <input className='form-control mb-2' type="email" placeholder='Email' />
                 <input className='form-control mb-4' type="password" placeholder='Password' />
                 <button className='btn btn-primary'>Login</button>
                 <br />
-                <Link to="/register" className='text-light '>Create a new Account 
-                    <button className='btn btn-primary ms-2'>Register</button>
-                 </Link>
+                <br />
+                <p>
+                   <span className='text-light me-2'>New User Nursing Care</span> <br />
+                    <Link to="/register" className='text-warning'>Create a new Account  
+                    </Link>
+                </p>
+               <span className='text-light '>------------------OR------------------</span>
                 <br />
                 <button onClick={signInUsingGoogle} className='btn btn-warning mt-3'>Sign In With Google</button>
             </div>

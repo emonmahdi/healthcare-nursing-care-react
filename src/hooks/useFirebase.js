@@ -7,6 +7,7 @@ initializeAuthentication();
 
 const useFirebase =() => {
     const [user, setUser] = useState({});
+    const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [error, setError] = useState('')
@@ -55,7 +56,7 @@ const useFirebase =() => {
             setError('Password must be at least 6 Charecters Long')
             return;
         }
-        createUserWithEmailAndPassword(auth, email, password)
+        createUserWithEmailAndPassword(auth, email, password,name)
             .then(result => {
                 const user = result.user 
                 console.log(user);
@@ -64,6 +65,10 @@ const useFirebase =() => {
             .catch(error => {
                 setError(error.message);
             })
+    }
+
+    const handleNameChange =(e) => {
+        setName(e.target.value)
     }
 
     const handleEmailChange = (e) => {
@@ -82,7 +87,8 @@ const useFirebase =() => {
         logOut,
         handleRegistration,
         handleEmailChange,
-        handlePasswordChange
+        handlePasswordChange,
+        handleNameChange
     }
 }
 
