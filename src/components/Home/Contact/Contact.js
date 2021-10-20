@@ -12,7 +12,7 @@ const Contact = () => {
                         <div className="col-lg-8">
                             <form className='w-75 mx-auto'>
                                 <input className='form-control mb-2' type="text" placeholder='Name' />
-                                <input className='form-control mb-2' type="email" placeholder='Name' />
+                                <input className='form-control mb-2' type="email" placeholder='Email' />
                                 <textarea className='form-control mb-3' ></textarea>
                                 <input className='btn btn-warning' type="submit" value='Submit' />
                             </form>

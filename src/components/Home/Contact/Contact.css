@@ -12,3 +12,12 @@
     margin-top: 20px;
     margin-bottom: 10px;
 }
+
+textarea{
+    height: 200px;
+}
+@media screen and (max-width:592px){
+    textarea{
+        height: 150px;
+    }
+}

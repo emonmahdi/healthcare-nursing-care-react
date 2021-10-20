@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Login.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faUser } from '@fortawesome/free-solid-svg-icons';  
 import useFirebase from '../../../hooks/useFirebase';
@@ -14,7 +15,7 @@ const Login = () => {
     return (
         <div>
             <h2 className='mt-2'>{element2} Login </h2>
-            <div className='w-25 mb-5 p-3 mx-auto border mt-4 bg-secondary rounded'>
+            <div className='w-25 login-reg mb-5 p-3 mx-auto border mt-4 bg-secondary rounded'>
                 <input onBlur={handleEmailChange} className='form-control mb-2' type="email" placeholder='Email' />
                 <input onBlur={handlePasswordChange} className='form-control mb-4' type="password" placeholder='Password' />
                 <button onClick={handleLogin} className='btn btn-primary'>Login</button>

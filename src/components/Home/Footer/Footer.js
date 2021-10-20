@@ -5,10 +5,10 @@ const Footer = () => {
     return (
 
         <>
-            <div id='footer-section'>
+            <div id='footer-section'> 
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-4 text-start">
+                    <div className="col-lg-4 text-start single-row">
                         <h2>Delievered on time with <span className='text-info'>no hassle</span> </h2>
                         <div className="social-link">
                             <a href="#"> <i className='fab fa-facebook-f'></i> </a>
@@ -17,7 +17,7 @@ const Footer = () => {
                             <a href="#"> <i className='fab fa-linkedin'></i> </a>
                         </div>
                     </div>
-                    <div className="col-lg-5">
+                    <div className="col-lg-5 single-row">
                         <h5>UseFull Links</h5>
                         <div className="links">
                             <a href="#">Services</a>

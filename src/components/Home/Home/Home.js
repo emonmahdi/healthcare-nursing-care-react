@@ -4,6 +4,7 @@ import Contact from '../Contact/Contact';
 import Footer from '../Footer/Footer';
 import Services from '../Services/Services';
 import Team from '../Team/Team';
+import './Home.css'
 
 const Home = () => {
     return (

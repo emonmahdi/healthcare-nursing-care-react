@@ -17,3 +17,11 @@
     color:#fff;
     font-size: 20px;
 }
+@media screen and (max-width:592px){ 
+    #footer-section{
+        text-align: left!important;
+    }
+    .single-row{
+        margin-bottom: 30px;
+    }
+}

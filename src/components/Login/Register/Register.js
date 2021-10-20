@@ -1,15 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
+import './Register.css'
 import useFirebase from '../../../hooks/useFirebase';
 
 const Register = () => {
     const {error,handleRegistration, handleEmailChange, handlePasswordChange, handleNameChange} = useAuth();
     return (
-        <div className='mb-5'>
+        <div className='mb-5 '>
             <h2 className='text-primary'>Please Registration</h2>
            <form onSubmit={handleRegistration}>
-           <div className='w-25 p-3 mx-auto border mt-4 bg-secondary rounded'>
+           <div className='w-25 form-reg p-3 mx-auto border mt-4 bg-secondary rounded'>
                 <input onBlur={handleNameChange} className='form-control mb-2' type="text" required placeholder='Name' />
                 <input onBlur={handleEmailChange} className='form-control mb-2' type="email" required placeholder='Email' />
                 <input onBlur={handlePasswordChange} className='form-control mb-4' type="password" required placeholder='Password' />
