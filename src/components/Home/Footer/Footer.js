@@ -23,6 +23,7 @@ const Footer = () => {
                             <a href="#">Services</a>
                             <a href="#">About Us</a>
                             <a href="#">Our Team Member</a>
+                            <a href="#">Traning</a>
                         </div>
                     </div>
                     <div className="col-lg-3">
