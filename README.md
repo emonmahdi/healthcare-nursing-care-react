@@ -4,9 +4,9 @@ Our Nursing Care Website here [Nursing Care](https://nursing-care-3ccad.web.app/
 
 ## About Our Nursing Care 
 
-* Trusted Help from Our Family to Yours
-* Living Assistance Service
-* Quality Home Care for Seniors
-* For Your Safe
-* For Your Home
-* For Your Company
+* This is a Nursing Care Support Website.
+* This website Login And Registration and Google Authentication Features Provide.
+* Responsive Mobile and Desktop View
+* Different service views to different data.
+* Data loaded from API
+* This project uses technology- Bootstrap, React, Firebase, etc.
